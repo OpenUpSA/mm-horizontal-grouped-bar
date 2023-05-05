@@ -36,5 +36,29 @@ const data = [
   ]}
   ```
 
+  Adjust dimensions and formatting here:
+
+  ```
+  const margin = {top: 0, right: 0, bottom: 0, left: 200};
+const width = d3.select(".chart").node().clientWidth - margin.left - margin.right;
+const height = 600 - margin.top - margin.bottom;
+const formatter = d3.formatPrefix(".2s", 1e3);
+```
+
+## NB
+
+Code currenty uses this everywhere:
+
+```
+y.bandwidth()/4
+```
+
+Adjust this with the amount of years - might need to do an array count.
+
+
+
+
+
+
 
 

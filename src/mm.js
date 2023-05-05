@@ -46,8 +46,6 @@ const width = d3.select(".chart").node().clientWidth - margin.left - margin.righ
 const height = 600 - margin.top - margin.bottom;
 const formatter = d3.formatPrefix(".2s", 1e3);
 
-// const currencyFormatter = d3.format(`${formatter.scale}~`);
-
 const svg = d3.select(".chart")
             .append("svg")
             .attr("width", width + margin.left + margin.right)
